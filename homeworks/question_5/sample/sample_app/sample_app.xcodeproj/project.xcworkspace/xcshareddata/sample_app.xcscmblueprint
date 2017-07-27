@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "889D576D0E0ACBEC5A52AA36D3DD90DCDBC2E90D",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "256A3FC78064E1910D81B7629AE48815D628BABC" : 9223372036854775807,
+    "889D576D0E0ACBEC5A52AA36D3DD90DCDBC2E90D" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "5A495531-63C5-4078-9B9C-A44D3D00D999",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "256A3FC78064E1910D81B7629AE48815D628BABC" : "",
+    "889D576D0E0ACBEC5A52AA36D3DD90DCDBC2E90D" : "ios_development\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "sample_app",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "tutorial\/sample\/sample_app\/sample_app.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Feli10\/Makeschool.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "256A3FC78064E1910D81B7629AE48815D628BABC"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/brewinglab\/ios_development.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "889D576D0E0ACBEC5A52AA36D3DD90DCDBC2E90D"
+    }
+  ]
+}

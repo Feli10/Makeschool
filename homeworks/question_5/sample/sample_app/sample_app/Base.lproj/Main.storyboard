@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="sample_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="poutine" translatesAutoresizingMaskIntoConstraints="NO" id="hY6-eQ-E3p">
+                                <rect key="frame" x="20" y="90" width="254" height="254"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Poutine is:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tYw-Xk-E2k">
+                                <rect key="frame" x="89" y="314" width="117" height="28"/>
+                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="From Seattle" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7rG-eC-xtx">
+                                <rect key="frame" x="66" y="392" width="113" height="20"/>
+                                <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="From New York" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="aoO-gn-QU8">
+                                <rect key="frame" x="67" y="468" width="139" height="20"/>
+                                <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="incorrectAnswer" translatesAutoresizingMaskIntoConstraints="NO" id="xLj-gE-mhl">
+                                <rect key="frame" x="16" y="388" width="30" height="30"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ONA-e3-NU2" userLabel="A">
+                                <rect key="frame" x="16" y="388" width="30" height="29"/>
+                                <state key="normal" image="A"/>
+                                <connections>
+                                    <action selector="aButonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="t4w-oz-zcJ"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="correctAnswer" translatesAutoresizingMaskIntoConstraints="NO" id="qAM-Tm-y8f">
+                                <rect key="frame" x="16" y="425" width="30" height="30"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rok-ik-jqa" userLabel="B">
+                                <rect key="frame" x="16" y="425" width="30" height="30"/>
+                                <state key="normal" image="B"/>
+                                <connections>
+                                    <action selector="bButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZAr-bU-wdg"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="incorrectAnswer" translatesAutoresizingMaskIntoConstraints="NO" id="gbU-RG-ux7">
+                                <rect key="frame" x="16" y="463" width="30" height="30"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FtQ-f6-2Zp" userLabel="C">
+                                <rect key="frame" x="16" y="463" width="30" height="30"/>
+                                <state key="normal" image="C"/>
+                                <connections>
+                                    <action selector="cButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eUH-2l-a2m"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="From Montreal" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6J4-cX-Dn7">
+                                <rect key="frame" x="66" y="430" width="134" height="20"/>
+                                <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6iV-A7-eOe" userLabel="Next">
+                                <rect key="frame" x="26" y="569" width="322" height="62"/>
+                                <state key="normal" image="nextButton_NEW"/>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qLL-mh-mzj">
+                                <rect key="frame" x="279" y="425" width="74" height="30"/>
+                                <state key="normal" title="Read More">
+                                    <color key="titleColor" red="0.10086781531572342" green="0.64059603214263916" blue="0.82002782821655273" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ss7-hg-aSy" kind="show" id="foj-zi-0iD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.79224012305699487" green="0.73607134297753918" blue="0.72312093683973078" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6J4-cX-Dn7" firstAttribute="firstBaseline" secondItem="qLL-mh-mzj" secondAttribute="firstBaseline" id="07S-RF-zIN"/>
+                            <constraint firstItem="7rG-eC-xtx" firstAttribute="top" secondItem="tYw-Xk-E2k" secondAttribute="bottom" constant="50" id="1Op-7I-oJ4"/>
+                            <constraint firstItem="xLj-gE-mhl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="5rI-5l-xky"/>
+                            <constraint firstItem="7rG-eC-xtx" firstAttribute="leading" secondItem="6J4-cX-Dn7" secondAttribute="leading" id="6y3-kZ-zuK"/>
+                            <constraint firstItem="qAM-Tm-y8f" firstAttribute="top" secondItem="rok-ik-jqa" secondAttribute="top" id="7gi-v5-G7J"/>
+                            <constraint firstItem="7rG-eC-xtx" firstAttribute="leading" secondItem="ONA-e3-NU2" secondAttribute="trailing" constant="20" id="AFO-pS-8dv"/>
+                            <constraint firstItem="gbU-RG-ux7" firstAttribute="bottom" secondItem="FtQ-f6-2Zp" secondAttribute="bottom" id="Bbt-4u-cJ4"/>
+                            <constraint firstItem="aoO-gn-QU8" firstAttribute="top" secondItem="6J4-cX-Dn7" secondAttribute="bottom" constant="18" id="CGu-un-9g8"/>
+                            <constraint firstItem="FtQ-f6-2Zp" firstAttribute="top" secondItem="qAM-Tm-y8f" secondAttribute="bottom" constant="8" symbolic="YES" id="DSu-Vo-vmE"/>
+                            <constraint firstItem="qAM-Tm-y8f" firstAttribute="leading" secondItem="rok-ik-jqa" secondAttribute="leading" id="DiW-Br-Thp"/>
+                            <constraint firstItem="rok-ik-jqa" firstAttribute="top" secondItem="ONA-e3-NU2" secondAttribute="bottom" constant="8" symbolic="YES" id="FMW-Vt-D9x"/>
+                            <constraint firstItem="ONA-e3-NU2" firstAttribute="centerY" secondItem="xLj-gE-mhl" secondAttribute="centerY" id="G2a-Bx-suZ"/>
+                            <constraint firstItem="6iV-A7-eOe" firstAttribute="top" secondItem="gbU-RG-ux7" secondAttribute="bottom" constant="76" id="HSx-eG-gCB"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="6iV-A7-eOe" secondAttribute="bottom" constant="36" id="HUD-4L-GUf"/>
+                            <constraint firstItem="gbU-RG-ux7" firstAttribute="top" secondItem="rok-ik-jqa" secondAttribute="bottom" constant="8" symbolic="YES" id="Iot-aE-iVZ"/>
+                            <constraint firstItem="hY6-eQ-E3p" firstAttribute="centerX" secondItem="tYw-Xk-E2k" secondAttribute="centerX" id="L4g-Tm-MzR"/>
+                            <constraint firstItem="ONA-e3-NU2" firstAttribute="leading" secondItem="qAM-Tm-y8f" secondAttribute="leading" id="LWj-2j-Fij"/>
+                            <constraint firstItem="6iV-A7-eOe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="LgL-dz-nWu"/>
+                            <constraint firstItem="FtQ-f6-2Zp" firstAttribute="centerY" secondItem="aoO-gn-QU8" secondAttribute="centerY" id="MwL-IE-Nmh"/>
+                            <constraint firstItem="hY6-eQ-E3p" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="4" id="NfZ-sA-KIw"/>
+                            <constraint firstItem="tYw-Xk-E2k" firstAttribute="trailing" secondItem="aoO-gn-QU8" secondAttribute="trailing" id="Nkf-Ne-ABx"/>
+                            <constraint firstItem="qLL-mh-mzj" firstAttribute="baseline" secondItem="6J4-cX-Dn7" secondAttribute="firstBaseline" id="OWz-oW-TfS"/>
+                            <constraint firstItem="qLL-mh-mzj" firstAttribute="leading" secondItem="6J4-cX-Dn7" secondAttribute="trailing" constant="79" id="RCT-Mg-vIP"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hY6-eQ-E3p" secondAttribute="trailing" constant="85" id="UOr-mR-1Lb"/>
+                            <constraint firstItem="rok-ik-jqa" firstAttribute="top" secondItem="qLL-mh-mzj" secondAttribute="top" id="VLF-sF-i5P"/>
+                            <constraint firstItem="FtQ-f6-2Zp" firstAttribute="leading" secondItem="gbU-RG-ux7" secondAttribute="leading" id="YdT-sO-Unn"/>
+                            <constraint firstItem="hY6-eQ-E3p" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="70" id="aQn-hw-PXY"/>
+                            <constraint firstItem="qAM-Tm-y8f" firstAttribute="leading" secondItem="gbU-RG-ux7" secondAttribute="leading" id="aTB-aj-4gG"/>
+                            <constraint firstItem="ONA-e3-NU2" firstAttribute="leading" secondItem="xLj-gE-mhl" secondAttribute="leading" id="gpI-EA-WT2"/>
+                            <constraint firstItem="qLL-mh-mzj" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="405" id="gyE-tA-cYX"/>
+                            <constraint firstItem="FtQ-f6-2Zp" firstAttribute="top" secondItem="gbU-RG-ux7" secondAttribute="top" id="ja7-Ql-giD"/>
+                            <constraint firstItem="6iV-A7-eOe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="l29-bj-XMP"/>
+                            <constraint firstItem="ONA-e3-NU2" firstAttribute="top" secondItem="xLj-gE-mhl" secondAttribute="top" id="soU-FI-4X0"/>
+                            <constraint firstItem="ONA-e3-NU2" firstAttribute="top" secondItem="hY6-eQ-E3p" secondAttribute="bottom" constant="44" id="wFv-sz-uCT"/>
+                            <constraint firstItem="ONA-e3-NU2" firstAttribute="centerY" secondItem="7rG-eC-xtx" secondAttribute="centerY" id="wYc-Qw-dQ8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="aButton" destination="ONA-e3-NU2" id="oFC-DY-dTm"/>
+                        <outlet property="bButton" destination="rok-ik-jqa" id="qkh-Ob-xtf"/>
+                        <outlet property="cButton" destination="FtQ-f6-2Zp" id="AI6-st-CUH"/>
+                        <outlet property="readMoreButton" destination="qLL-mh-mzj" id="Htg-od-xOJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="426" y="-120"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="3cu-99-xzk">
+            <objects>
+                <viewController id="ss7-hg-aSy" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7La-6R-Oyg"/>
+                        <viewControllerLayoutGuide type="bottom" id="axI-bZ-7YS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7yc-6K-que">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Poutine" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y6V-lm-shv">
+                                <rect key="frame" x="16" y="20" width="343" height="41"/>
+                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="poutine" translatesAutoresizingMaskIntoConstraints="NO" id="SmW-0u-Krf">
+                                <rect key="frame" x="68" y="465" width="238" height="182"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="182" id="7jK-gV-6Ta"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cJ3-Ga-MY9">
+                                <rect key="frame" x="16" y="20" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="4HC-bV-JSC"/>
+                                </constraints>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="0.10086781531572342" green="0.64059603214263916" blue="0.82002782821655273" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="pGB-WZ-Q6D"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LbO-LG-mbO">
+                                <rect key="frame" x="16" y="69" width="343" height="393"/>
+                                <mutableString key="text">Poutine is a dish popular across Canada, made with French fries and cheese curds topped with a light brown gravy. This fast-food dish is typically found across Canada and in some places in the northern United States. In Canada it is sold in small "greasy spoon" type diners (commonly known as cantines or casse-croûtes in Quebec) and pubs, as well as by roadside chip wagons (commonly known as cabanes à patates, literally "potato shacks") and in hockey arenas. National and international chains such as Smoke's Poutinerie, New York Fries, McDonald's, Wendy's, A&amp;W, KFC, Burger King, Harvey's, Mary Brown's, and Wahlburgers restaurants also sell mass-market poutine in Canada (although not always country-wide).</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.79350811243057251" green="0.73735779523849487" blue="0.72012633085250854" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="y6V-lm-shv" firstAttribute="trailing" secondItem="7yc-6K-que" secondAttribute="trailingMargin" id="7gQ-I9-GH7"/>
+                            <constraint firstItem="SmW-0u-Krf" firstAttribute="leading" secondItem="7yc-6K-que" secondAttribute="leadingMargin" constant="52" id="BW2-7k-Lgb"/>
+                            <constraint firstItem="y6V-lm-shv" firstAttribute="trailing" secondItem="LbO-LG-mbO" secondAttribute="trailing" id="CoL-z2-PgF"/>
+                            <constraint firstItem="cJ3-Ga-MY9" firstAttribute="leading" secondItem="y6V-lm-shv" secondAttribute="leading" id="HG6-r2-EBk"/>
+                            <constraint firstItem="LbO-LG-mbO" firstAttribute="centerX" secondItem="SmW-0u-Krf" secondAttribute="centerX" id="HXH-5B-83H"/>
+                            <constraint firstItem="y6V-lm-shv" firstAttribute="top" secondItem="7La-6R-Oyg" secondAttribute="bottom" id="MIq-2I-vhU"/>
+                            <constraint firstAttribute="bottom" secondItem="SmW-0u-Krf" secondAttribute="bottom" constant="20" symbolic="YES" id="R9f-f9-Bhv"/>
+                            <constraint firstItem="cJ3-Ga-MY9" firstAttribute="leading" secondItem="LbO-LG-mbO" secondAttribute="leading" id="SFL-as-VhL"/>
+                            <constraint firstItem="LbO-LG-mbO" firstAttribute="top" secondItem="y6V-lm-shv" secondAttribute="bottom" constant="8" symbolic="YES" id="TAV-eU-1Y7"/>
+                            <constraint firstItem="cJ3-Ga-MY9" firstAttribute="baseline" secondItem="y6V-lm-shv" secondAttribute="firstBaseline" id="n79-4Q-Ap5"/>
+                            <constraint firstItem="LbO-LG-mbO" firstAttribute="top" secondItem="cJ3-Ga-MY9" secondAttribute="bottom" constant="19" id="rQ3-Bu-2hE"/>
+                            <constraint firstItem="y6V-lm-shv" firstAttribute="leading" secondItem="7yc-6K-que" secondAttribute="leadingMargin" id="vn9-XY-koy"/>
+                            <constraint firstItem="SmW-0u-Krf" firstAttribute="top" secondItem="LbO-LG-mbO" secondAttribute="bottom" constant="3" id="yjr-IF-34S"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qMn-7N-fiW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1390" y="-120"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="A" width="30" height="29"/>
+        <image name="B" width="30" height="29"/>
+        <image name="C" width="30" height="29"/>
+        <image name="correctAnswer" width="30" height="30"/>
+        <image name="incorrectAnswer" width="30" height="30"/>
+        <image name="nextButton_NEW" width="370" height="63"/>
+        <image name="poutine" width="275" height="183"/>
+    </resources>
+</document>
